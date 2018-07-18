@@ -1,0 +1,25 @@
+* {
+  text-decoration: none;
+}
+.welcome-body {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome {
+  margin: 250px 3% 0 3%;
+  /* height: 20%; */
+  text-align: center;
+  font-size: 2.4vw;
+  line-height: 3.5vw;
+  color: rgb(109, 109, 109);
+}
+
+.authorSign {
+  font-size: 1.3vw;
+  margin-bottom: 25px;
+}

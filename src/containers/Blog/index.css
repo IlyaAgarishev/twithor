@@ -1,0 +1,150 @@
+.blog-body {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-field.left,
+.addPostArea {
+  width: 18%;
+}
+
+.blog-field.left {
+  position: sticky;
+  top: 20px;
+  width: 22%;
+  height: 120px;
+}
+
+.blog-field.left > .button {
+  width: 100%;
+  height: 50%;
+  background: #e6ecf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+}
+
+.blog-field.left > .button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #d6e0e6;
+}
+
+.blog-field.middle {
+  width: 54%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.addPostArea {
+  height: 150px;
+  font-size: 15px;
+  line-height: 25px;
+  position: sticky;
+  top: 20px;
+  padding: 2%;
+  background: #fcfcfc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addPostButton {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: #1da1f2;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.addPostButton:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgb(28, 151, 228);
+}
+
+@media only screen and (max-width: 1419px) {
+  .addPostArea {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .addPostArea {
+    height: 130px;
+    font-size: 12px;
+  }
+  .addPostButton {
+    width: 70px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .blog-wrapper {
+    width: 95%;
+  }
+  .blog-field.left {
+    position: sticky;
+    top: 20px;
+    width: 28%;
+  }
+  .blog-field.middle {
+    width: 70%;
+  }
+  .addPostArea {
+    margin-top: 200px;
+    position: fixed !important;
+    background: transparent;
+    width: 23%;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .blog-field.left {
+    height: 50px;
+  }
+  .blog-field.left > .button {
+    font-size: 12px;
+  }
+  .addPostArea {
+    background: rgb(255, 255, 255);
+    font-size: 7px;
+    height: 70px;
+    margin-top: 120px;
+  }
+  .addPostButton {
+    width: 50px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .addPostArea {
+    background: rgb(255, 255, 255);
+    font-size: 5px;
+    height: 50px;
+    margin-top: 120px;
+  }
+  .addPostButton {
+    width: 40px;
+    height: 15px;
+  }
+}

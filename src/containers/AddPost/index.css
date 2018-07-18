@@ -1,0 +1,105 @@
+.addPost-body {
+  width: 100%;
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+}
+
+.addPost {
+  margin-top: 80px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* background: rgb(145, 33, 33); */
+}
+
+.addPost-author {
+  color: #a5a5a5;
+  outline: none;
+  border: none;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.addPost-title {
+  height: 40px;
+  font-size: 40px;
+  color: #a5a5a5;
+  font-weight: 900;
+  outline: none;
+  border: none;
+}
+
+.addPost-text {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #a5a5a5;
+  outline: none;
+  resize: none;
+  border: none;
+}
+
+.addPost-text:empty:not(:focus):before {
+  content: attr(data-placeholder);
+}
+
+.submitArticle {
+  margin-left: 110px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: #1da1f2;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  align-self: flex-end;
+  position: fixed;
+}
+
+.submitArticle:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgb(28, 151, 228);
+}
+
+@media only screen and (max-width: 1000px) {
+  .addPost-text {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .addPost-title {
+    font-size: 30px;
+  }
+  .submitArticle {
+    width: 70px;
+    height: 30px;
+    font-size: 13px;
+    margin-left: 70px;
+  }
+  .addPost-text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .addPost-title {
+    font-size: 25px;
+  }
+  .addPost-text {
+    font-size: 12px;
+  }
+  .submitArticle {
+    width: 60px;
+    height: 25px;
+    font-size: 10px;
+    margin-left: 70px;
+  }
+}
