@@ -24,11 +24,9 @@ ReactDOM.render(
         <Route path="/blog" component={Blog} />
         <Route path="/tutorial" component={Tutorial} />
         <Route path="/addPost" component={AddPost} />
-        {(function() {
-          for (let i = 0; i < 4; i++) {
-            return <Route path={'/' + i} component={Post} />;
-          }
-        })()}
+        {store
+          .getState()
+          .addPost.map((post, index) => <Route path={`/post/${index}`} component={Post} />)}
       </Switch>
     </HashRouter>
   </Provider>,

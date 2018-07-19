@@ -1,0 +1,66 @@
+.bottom-wrapper {
+  height: 40px;
+  background: #e6ecf0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  border-top: 1px solid rgb(214, 214, 214);
+}
+
+.postMini-likes,
+.postMini-comments {
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.postMini-likes > .like {
+  background-image: url(../../img/likeEmpty.png);
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.postMini-likes > .like:hover {
+  transition: all 0.2s ease;
+  background-image: url(../../img/like.png);
+}
+
+.postMini-comments > .comments {
+  margin-right: 5px;
+  width: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .bottom-wrapper {
+    font-size: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .postMini-likes > .like {
+    margin-top: 4px;
+  }
+  .postMini-likes > .like,
+  .postMini-comments > .comments {
+    width: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .bottom-wrapper {
+    font-size: 8px;
+    height: 20px;
+  }
+  .postMini-likes > .like {
+    margin-top: 6px;
+  }
+  .postMini-likes > .like,
+  .postMini-comments > .comments {
+    width: 12px;
+  }
+}

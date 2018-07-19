@@ -1,0 +1,78 @@
+.post-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.post {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.post-madeBy {
+  align-self: center;
+  font-size: 12px;
+}
+
+.post-title {
+  margin-top: 30px;
+  align-self: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.post-text {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.post-likes {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 300;
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-like {
+  background-image: url(../../img/likeEmpty.png);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.post-like:hover {
+  transition: all 0.2s ease;
+  background-image: url(../../img/like.png);
+}
+
+@media only screen and (max-width: 900px) {
+  .post-text {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .post-title {
+    font-size: 20px;
+  }
+  .post-text {
+    font-size: 8px;
+  }
+  .post-likes {
+    font-size: 17px;
+    width: 35px;
+  }
+  .post-like {
+    width: 17px;
+    height: 17px;
+  }
+}
