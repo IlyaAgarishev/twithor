@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header';
 import './index.css';
+import Textarea from 'react-textarea-autosize';
 import { connect } from 'react-redux';
 
 class AddPost extends Component {
@@ -9,11 +10,7 @@ class AddPost extends Component {
   }
 
   addPost = () => {
-    this.props.onAddPost(
-      this.addPostAuthor.value,
-      this.addPostTitle.value,
-      this.addPostText.innerHTML
-    );
+    this.props.onAddPost(this.addPostAuthor.value, this.addPostTitle.value, this.addPostText.value);
 
     document.location.href = 'http://localhost:3000/?#/blog';
   };
@@ -29,21 +26,32 @@ class AddPost extends Component {
             </button>
             <input
               type="text"
+              maxLength="30"
               className="addPost-author"
               placeholder="Your name"
               ref={ref => (this.addPostAuthor = ref)}
+              onKeyDown={event => {
+                if (event.keyCode == 13) {
+                  event.preventDefault();
+                }
+              }}
             />
             <input
               type="text"
+              maxLength="60"
               className="addPost-title"
               placeholder="Title"
               ref={ref => (this.addPostTitle = ref)}
+              onKeyDown={event => {
+                if (event.keyCode == 13) {
+                  event.preventDefault();
+                }
+              }}
             />
-            <div
+            <Textarea
               className="addPost-text"
-              data-placeholder="Share your story..."
-              contentEditable="true"
-              ref={ref => (this.addPostText = ref)}
+              placeholder="Share your story..."
+              inputRef={ref => (this.addPostText = ref)}
             />
           </form>
         </div>

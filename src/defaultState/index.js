@@ -38,7 +38,7 @@ const defaulState = [
   When the temp goes up to the mid-80s\
   Calling men ladies, sorry, Doc, but I been crazy\
   There's no way that you can save me, it's okay, go with him Hailie",
-    likes: 0,
+    likes: 2,
     comments: 0,
     time:
       new Date().getHours() +
@@ -76,7 +76,7 @@ const defaulState = [
     He's married to the game, like a fuck you for Christmas\
     His gift is a curse, forget the Earth, he's got the urge to pull his dick from the dirt\
     And fuck the whole universe",
-    likes: 0,
+    likes: 4,
     comments: 0,
     time:
       new Date().getHours() +
@@ -117,7 +117,7 @@ const defaulState = [
     All my people from the front to the back nod, back nod\
     Now who thinks their arms are long enough to slap box, slap box?\
     Let me show you maintaining this shit ain't that hard, that hard",
-    likes: 0,
+    likes: 620,
     comments: 0,
     time:
       new Date().getHours() +
@@ -162,7 +162,7 @@ const defaulState = [
     Then there's no reason that a man and another man can't elope\
     But if you feel like I feel I got the antidote.\
     Women wave your pantyhose, sing the chorus and it goes",
-    likes: 0,
+    likes: 7,
     comments: 0,
     time:
       new Date().getHours() +
@@ -209,7 +209,7 @@ const defaulState = [
   When the temp goes up to the mid-80s\
   Calling men ladies, sorry, Doc, but I been crazy\
   There's no way that you can save me, it's okay, go with him Hailie",
-    likes: 0,
+    likes: 90,
     comments: 0,
     time:
       new Date().getHours() +
@@ -247,7 +247,7 @@ const defaulState = [
     He's married to the game, like a fuck you for Christmas\
     His gift is a curse, forget the Earth, he's got the urge to pull his dick from the dirt\
     And fuck the whole universe",
-    likes: 0,
+    likes: 133,
     comments: 0,
     time:
       new Date().getHours() +
@@ -288,7 +288,7 @@ const defaulState = [
     All my people from the front to the back nod, back nod\
     Now who thinks their arms are long enough to slap box, slap box?\
     Let me show you maintaining this shit ain't that hard, that hard",
-    likes: 0,
+    likes: 120,
     comments: 0,
     time:
       new Date().getHours() +
@@ -333,7 +333,7 @@ const defaulState = [
     Then there's no reason that a man and another man can't elope\
     But if you feel like I feel I got the antidote.\
     Women wave your pantyhose, sing the chorus and it goes",
-    likes: 0,
+    likes: 420,
     comments: 0,
     time:
       new Date().getHours() +

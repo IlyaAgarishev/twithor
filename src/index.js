@@ -16,6 +16,12 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+function CreatePosts() {
+  return store
+    .getState()
+    .addPost.map((post, index) => <Route path={`/post/${index}`} component={Post} />);
+}
+
 ReactDOM.render(
   <Provider store={store}>
     <HashRouter>
@@ -24,9 +30,7 @@ ReactDOM.render(
         <Route path="/blog" component={Blog} />
         <Route path="/tutorial" component={Tutorial} />
         <Route path="/addPost" component={AddPost} />
-        {store
-          .getState()
-          .addPost.map((post, index) => <Route path={`/post/${index}`} component={Post} />)}
+        <CreatePosts />
       </Switch>
     </HashRouter>
   </Provider>,

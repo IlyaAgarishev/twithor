@@ -29,6 +29,8 @@
 }
 
 .addPost-text {
+  word-wrap: break-word;
+  width: 100%;
   margin-top: 30px;
   font-size: 25px;
   font-weight: 300;
@@ -36,10 +38,8 @@
   outline: none;
   resize: none;
   border: none;
-}
-
-.addPost-text:empty:not(:focus):before {
-  content: attr(data-placeholder);
+  overflow: hidden;
+  height: inherit;
 }
 
 .submitArticle {

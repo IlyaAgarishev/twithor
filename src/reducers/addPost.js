@@ -5,7 +5,7 @@ const addPost = (state = defaultState, action) => {
     case 'ADD_POST':
       return [...state, action.payload];
     case 'ADD_LIKE':
-      [...state[action.index].likes++];
+      return [...state, ...state[action.index].likes++];
     default:
       return state;
   }

@@ -6,11 +6,12 @@ import like from '../../img/like.png';
 
 class Post extends Component {
   like = () => {
-    this.likeIcon.style.backgroundImage = `url(${like})`;
+    this.likeIconn.style.backgroundImage = `url(${like})`;
   };
 
   render() {
-    const postId = document.location.hash.split('')[document.location.hash.length - 1];
+    const postId = document.location.hash.split('/')[document.location.hash.split('/').length - 1];
+
     return (
       <div>
         <Header />
@@ -25,7 +26,7 @@ class Post extends Component {
               <div
                 className="post-like"
                 ref={ref => {
-                  this.likeIcon = ref;
+                  this.likeIconn = ref;
                 }}
                 onClick={this.like}
               />

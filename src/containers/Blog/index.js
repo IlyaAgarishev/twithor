@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './index.css';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
-import PostMiniTop from '../PostMiniTop';
-import PostMiniBottom from '../PostMiniBottom';
+import PostMini from '../PostMini';
 import { connect } from 'react-redux';
 
 class Blog extends Component {
@@ -19,14 +18,7 @@ class Blog extends Component {
             </div>
             <div className="blog-field middle">
               {this.props.articles.addPost.map((post, index) => {
-                return (
-                  <div>
-                    <Link to={'/post/' + index}>
-                      <PostMiniTop post={post} index={index} />
-                    </Link>
-                    <PostMiniBottom index={index} />
-                  </div>
-                );
+                return <PostMini post={post} index={index} />;
               })}
             </div>
             <div className="addPostArea">

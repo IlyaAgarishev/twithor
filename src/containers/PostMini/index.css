@@ -1,11 +1,12 @@
 .postMini {
   width: 100%;
-  height: 160px;
+  height: 200px;
   background: #e6ecf0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: black;
+  margin-bottom: 20px;
 }
 
 .postMini:hover {
@@ -19,9 +20,9 @@
   font-size: 12px;
   height: 20%;
   display: flex;
-  justify-content: start;
   padding-left: 4%;
   align-items: center;
+  color: black;
 }
 
 .timeOfPublishing {
@@ -31,6 +32,8 @@
 .postMadeBy {
   display: flex;
   align-items: center;
+  overflow: hidden;
+  margin-right: 5px;
 }
 
 .middle-wrapper {
@@ -40,6 +43,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 .postMini-title,
@@ -51,17 +55,51 @@
 }
 
 .postMini-title {
-  height: 34%;
-  display: flex;
-  align-items: center;
+  height: 30%;
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 20px;
 }
 
+.bottom-wrapper {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  border-top: 1px solid rgb(214, 214, 214);
+}
+
+.postMini-likes,
+.postMini-comments {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.postMini-likes > .like {
+  background-image: url(../../img/likeEmpty.png);
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.postMini-likes > .like:hover {
+  transition: all 0.2s ease;
+  background-image: url(../../img/like.png);
+}
+
+.postMini-comments > .comments {
+  margin-right: 5px;
+  width: 20px;
+}
+
 @media only screen and (max-width: 500px) {
   .postMini {
-    height: 100px;
+    height: 120px;
+    margin-bottom: 10px;
   }
   .top-wrapper {
     font-size: 8px;
@@ -72,11 +110,22 @@
   .postMini-text {
     font-size: 10px;
   }
+  .bottom-wrapper {
+    font-size: 10px;
+  }
+  .postMini-likes > .like,
+  .postMini-comments > .comments {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   .postMini {
-    height: 80px;
+    height: 100px;
+  }
+  .top-wrapper {
+    font-size: 6px;
   }
   .postMini-title {
     font-size: 12px;
@@ -84,5 +133,14 @@
   }
   .postMini-text {
     font-size: 10px;
+  }
+  .bottom-wrapper {
+    font-size: 8px;
+  }
+
+  .postMini-likes > .like,
+  .postMini-comments > .comments {
+    width: 12px;
+    height: 12px;
   }
 }
