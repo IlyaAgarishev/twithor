@@ -35,7 +35,7 @@ class PostMini extends Component {
           </div>
           <div className="postMini-comments">
             <img className="comments" src={comments} alt="" />
-            {this.props.state.addPost[this.props.index].comments}
+            {this.props.state.addPost[this.props.index].comments.length}
           </div>
         </div>
       </div>

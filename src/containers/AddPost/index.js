@@ -72,7 +72,7 @@ export default connect(
         title: title,
         text: text,
         likes: 0,
-        comments: 0,
+        comments: [],
         time:
           new Date().getHours() +
           ':' +

@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import Header from '../../components/Header';
 import './index.css';
 import like from '../../img/like.png';
+import AddComment from '../AddComment';
+import Comment from '../Comment';
 
 class Post extends Component {
   like = () => {
@@ -11,7 +13,6 @@ class Post extends Component {
 
   render() {
     const postId = document.location.hash.split('/')[document.location.hash.split('/').length - 1];
-
     return (
       <div>
         <Header />
@@ -28,9 +29,15 @@ class Post extends Component {
                 ref={ref => {
                   this.likeIconn = ref;
                 }}
-                onClick={this.like}
+                onClick={this.props.onLike(postId)}
               />
               {this.props.state.addPost[postId].likes}
+            </div>
+            <AddComment index={postId} />
+            <div className="post-comments">
+              {this.props.state.addPost[postId].comments.map((comment, index) => {
+                return <Comment postIndex={postId} commentIndex={index} />;
+              })}
             </div>
           </div>
         </div>
