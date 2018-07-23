@@ -1,0 +1,73 @@
+.contact-body {
+  width: 100%;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.me {
+  width: 60%;
+}
+
+.social-networks {
+  width: 50%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+}
+.social-networks > a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-network {
+  width: 70%;
+  -webkit-animation: rotating 3s infinite linear;
+  -moz-animation: rotating 3s infinite linear;
+  -ms-animation: rotating 3s infinite linear;
+  -o-animation: rotating 3s infinite linear;
+  animation: rotating 3s infinite linear;
+}
+@-webkit-keyframes rotating {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotating {
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotating {
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotating {
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.author-name {
+  font-weight: 300;
+}

@@ -12,8 +12,8 @@ const Header = () => (
       <Link to="/blog" className="header-link blog">
         Blog
       </Link>
-      <Link to="/tutorial" className="header-link tutorial">
-        Tutorial
+      <Link to="/contact" className="header-link blog">
+        Contact
       </Link>
     </div>
     <div className="header-field middle">
@@ -22,7 +22,7 @@ const Header = () => (
     <div className="header-field last">
       <a
         className="header-link github"
-        href="https://github.com/IlyaAgarishev"
+        href="https://github.com/IlyaAgarishev/twithor"
         target="_blank"
         rel="noopener noreferrer"
       >

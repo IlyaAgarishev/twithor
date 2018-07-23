@@ -9,6 +9,7 @@ import Blog from './containers/Blog/index.js';
 import Tutorial from './components/Tutorial';
 import AddPost from './containers/AddPost';
 import Post from './containers/Post';
+import Contact from './components/Contact';
 import reducer from './reducers';
 
 const store = createStore(
@@ -30,6 +31,7 @@ ReactDOM.render(
         <Route path="/blog" component={Blog} />
         <Route path="/tutorial" component={Tutorial} />
         <Route path="/addPost" component={AddPost} />
+        <Route path="/contact" component={Contact} />
         <CreatePosts />
       </Switch>
     </HashRouter>

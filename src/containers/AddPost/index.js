@@ -80,6 +80,7 @@ export default connect(
           new Date().getMinutes()
       };
       dispatch({ type: 'ADD_POST', payload });
+      dispatch({ type: 'NEW' });
     }
   })
 )(AddPost);

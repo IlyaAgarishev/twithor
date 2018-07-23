@@ -1,4 +1,4 @@
-import defaultState from '../defaultState/index.js';
+import defaultState from '../defaultPosts';
 
 const addPost = (state = defaultState, action) => {
   switch (action.type) {

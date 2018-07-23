@@ -7,10 +7,6 @@ import AddComment from '../AddComment';
 import Comment from '../Comment';
 
 class Post extends Component {
-  like = () => {
-    this.likeIconn.style.backgroundImage = `url(${like})`;
-  };
-
   render() {
     const postId = document.location.hash.split('/')[document.location.hash.split('/').length - 1];
     return (
@@ -29,7 +25,10 @@ class Post extends Component {
                 ref={ref => {
                   this.likeIconn = ref;
                 }}
-                onClick={this.props.onLike(postId)}
+                onClick={() => {
+                  this.likeIconn.style.backgroundImage = `url(${like})`;
+                  this.props.onLike(postId);
+                }}
               />
               {this.props.state.addPost[postId].likes}
             </div>

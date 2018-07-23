@@ -1,4 +1,4 @@
-const defaulState = [
+const defaultPosts = [
   {
     key: Date.now(),
     name: 'Slim Shady',
@@ -856,4 +856,4 @@ const defaulState = [
   }
 ];
 
-export default defaulState;
+export default defaultPosts;
