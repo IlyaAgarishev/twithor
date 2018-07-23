@@ -6,7 +6,6 @@ import { createStore } from 'redux';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Main from './components/Main';
 import Blog from './containers/Blog/index.js';
-import Tutorial from './components/Tutorial';
 import AddPost from './containers/AddPost';
 import Post from './containers/Post';
 import Contact from './components/Contact';
@@ -29,7 +28,6 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/blog" component={Blog} />
-        <Route path="/tutorial" component={Tutorial} />
         <Route path="/addPost" component={AddPost} />
         <Route path="/contact" component={Contact} />
         <CreatePosts />

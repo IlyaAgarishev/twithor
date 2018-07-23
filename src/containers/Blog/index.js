@@ -22,7 +22,6 @@ class Blog extends Component {
     const popular = this.props.state.addPost.filter(post => {
       return post.likes > 100;
     });
-    console.log(popular);
     return (
       <div>
         <Header />

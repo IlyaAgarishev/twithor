@@ -11,8 +11,7 @@ class AddPost extends Component {
 
   addPost = () => {
     this.props.onAddPost(this.addPostAuthor.value, this.addPostTitle.value, this.addPostText.value);
-
-    document.location.href = 'http://localhost:3000/?#/blog';
+    document.location.href = `http://${document.location.host}/?#/blog`;
   };
 
   render() {
@@ -21,9 +20,7 @@ class AddPost extends Component {
         <Header />
         <div className="addPost-body">
           <form className="addPost" onSubmit={this.addPost}>
-            <button type="submit" className="submitArticle">
-              Tweeth
-            </button>
+            <button className="submitArticle">Tweeth</button>
             <input
               type="text"
               maxLength="30"

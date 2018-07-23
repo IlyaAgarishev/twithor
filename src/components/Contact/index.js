@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import Header from '../Header';
-import me from '../../img/me1.png';
+import me from '../../img/jamezdean.jpg';
 import fb from '../../img/fb.svg';
 import inst from '../../img/inst.svg';
 import git from '../../img/git.svg';
